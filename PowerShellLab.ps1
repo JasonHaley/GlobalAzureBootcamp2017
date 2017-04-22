@@ -93,7 +93,7 @@ $msbuild = "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe"
 #Deploy to web app
 $webappname="gabpswebapp"
 
-# Create an App Service plan in Free tier.
+# Create an App Service plan in Standard tier.
 New-AzureRmAppServicePlan -Name $webappname -Location $location `
 -ResourceGroupName $resourceGroup -Tier Standard
 
